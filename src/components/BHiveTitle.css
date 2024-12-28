@@ -71,11 +71,11 @@
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) { /* For tablets and smaller screens */
     .bhiveTitleContainer {
-        top: 171%; /* Remove top from desktop */
-        left: unset; /* Remove left from desktop */
-        width: 95%; /* Full width for smaller screens */
-        padding: 10px; /* Add padding for better spacing */
-        margin-top: 10px; /* Space below the image */
+        top: 23%; 
+        left: unset; 
+        width: 95%; 
+        padding: 10px; 
+        margin-top: 10px; 
         height:15%;
     }
 
@@ -88,7 +88,7 @@
         height: 15%;
         position: relative;
         margin: 0 auto;
-        left: unset;
+        left: -24px;
         font-family: Inter;
         font-size: 20px;
         font-weight: 600;
@@ -113,27 +113,27 @@
     }
 
     .co-working {
-        top: 48%; /* Remove top from desktop */
-        left: unset; /* Remove left from desktop */
-        width: 100%; /* Full width for smaller screens */
-        display: flex; /* Center the image */
+        left: unset; 
+        width: 100%;
+        display: flex; 
         justify-content: center;
-        margin-bottom: 10px; /* Add space below the image */
+        margin-bottom: 10px; 
     }
 
     .co-working img {
-        width: 300px; /* Reduce image size */
+        width: 300px; 
         height: 300px;
-        position: static; /* Let the image flow naturally */
+        position: static; 
     }
 }
 
-@media (max-width: 480px) { /* For small mobile phones */
+/* For small mobile phones */
+
+@media (max-width: 480px) { 
     .bhiveTitle {
-        font-size: 24px; /* Further reduce font size */
+        font-size: 20px; 
         line-height: 30px;
         padding: 0 10px;
-        left: unset;
     }
 
     .bhiveTitle span {
@@ -141,7 +141,7 @@
     }
 
     .co-working img {
-        width: 250px; /* Smaller image size for small phones */
+        width: 250px; 
         height: 250px;
     }
 }

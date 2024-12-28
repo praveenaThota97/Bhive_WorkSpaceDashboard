@@ -14,7 +14,7 @@ function BhiveAmenities() {
 
     return (
         <div className="amenities">
-            <h2 className="advantagesQuestion">Why choose us?</h2>
+            <h2 className="advantagesQuestion">Why Choose us?</h2>
             <div className="features-grid">
                 {features.map((feature, index) => (
                     <div className="feature-item" key={index}>

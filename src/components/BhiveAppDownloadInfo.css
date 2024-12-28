@@ -53,11 +53,21 @@
 
 @media (max-width: 768px) {
     .appDownloadInfoContainer {
-        top: 3000%;
+        top: 422%;
         position: absolute;
         left: 20px;
         width: 95%;
-        height: auto;
+    }
+    .appDownloadInfoContainer h2{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0.30000001192092896px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
     }
     .appInfoContainer{
         width: 90%;
@@ -65,7 +75,7 @@
 
     .appInfoContainer .device {
         position: absolute;
-        top: -95px;
+        top: -155px;
         left: unset;
         width: 90%;
     }
@@ -76,6 +86,7 @@
 
     .storeContainer{
         left: unset;
+        top: 168px;
     }
 
     

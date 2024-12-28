@@ -38,16 +38,30 @@ function BhiveWorkspace() {
                                 <img src={`https://github.com/MujtabaKably/bhive-interview-project-data/raw/main/${workspace.images[0]}`} />
                             </article>
                             <footer className='workspaceFooter'>
-                                <div className='dailyPass'>
-                                    <p>Day Pass</p>
-                                    <p>₹<strong className='price'>{workspace.day_pass_price}</strong>/day</p>
+                            <div className="dailyPass">
+                                    <div className="bulkContent">
+                                        <div className="textBlock">
+                                            <p>Day Pass</p>
+                                            <p>₹<strong className="price">{workspace.day_pass_price}</strong>/Day</p>
+                                        </div>
+                                        <div className="passicon">
+                                            <img src="./images/Passicon.png" alt="Pass Icon"/>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='bulkPass'>
-                                    <div className='discountBadge'>20% discount</div>
-                                    <p>Bulk Pass</p>
-                                    <p>₹<strong className='price'>{calculateDiscount(workspace.day_pass_price)}</strong>/10 days</p>
+                                <div className="bulkPass">
+                                    <div className="discountBadge">20% discount</div>
+                                    <div className="bulkContent">
+                                        <div className="textBlock">
+                                            <p>Bulk Pass</p>
+                                            <p>₹<strong className="price">{calculateDiscount(workspace.day_pass_price)}</strong>/10 Days</p>
+                                        </div>
+                                        <div className="passicon">
+                                            <img src="./images/Passicon.png" alt="Pass Icon"/>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                </div>
 
                             </footer>
                         </div>
