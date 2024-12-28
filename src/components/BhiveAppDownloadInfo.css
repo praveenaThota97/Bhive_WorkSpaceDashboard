@@ -72,11 +72,12 @@
     }
     .appInfoContainer{
         width: 90%;
+        top: unset;
     }
 
     .appInfoContainer .device {
         position: absolute;
-        top: -52%;
+        top: 6%;
         left: unset;
         width: 90%;
     }
@@ -87,7 +88,7 @@
 
     .storeContainer{
         left: unset;
-        top: 52%;
+        top: 111%;
     }
 
     
