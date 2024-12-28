@@ -30,7 +30,7 @@ function BhiveWorkspace() {
                                 <p className='workspaceName'>{workspace.name}</p>
                                 <p className='direction'>
                                     <a href={workspace.google_maps_url} target='_blank' rel="noopener noreferrer">
-                                        <img src='/images/direction.png' alt='direction' />
+                                        <img src='./images/direction.png' alt='direction' />
                                     </a>
                                 </p>
                             </header>

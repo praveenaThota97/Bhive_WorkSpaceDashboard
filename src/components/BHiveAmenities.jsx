@@ -2,14 +2,14 @@ import './BhiveAmenities.css';
 
 function BhiveAmenities() {
     const features = [
-        { image: '/images/events2.png', name: 'Community Events' },
-        { image: '/images/gym.png', name: 'Gym Facilities' },
-        { image: '/images/wifi.png', name: 'High-Speed WiFi' },
-        { image: '/images/tea_cafe.png', name: 'Cafe & Tea Bar' },
-        { image: '/images/affordable.png', name: 'Affordable' },
-        { image: '/images/lounges.png', name: 'Comfort Lounges' },
-        { image: '/images/quickBooking.png', name: 'Quick Booking' },
-        { image: '/images/sports.png', name: 'Sports Area' },
+        { image: './images/events2.png', name: 'Community Events' },
+        { image: './images/gym.png', name: 'Gym Facilities' },
+        { image: './images/wifi.png', name: 'High-Speed WiFi' },
+        { image: './images/tea_cafe.png', name: 'Cafe & Tea Bar' },
+        { image: './images/affordable.png', name: 'Affordable' },
+        { image: './images/lounges.png', name: 'Comfort Lounges' },
+        { image: './images/quickBooking.png', name: 'Quick Booking' },
+        { image: './images/sports.png', name: 'Sports Area' },
     ];
 
     return (
