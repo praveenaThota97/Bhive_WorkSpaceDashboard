@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  background-color: #f7f8fa;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 1440px;
+  height: 2580px;
+  top: 0px;
+  position: absolute;
+  display: flex;
+  border: 1px solid rgb(233, 229, 229);
+  background-color: #F9FAFF;
+}
+
+.websiteFooter{
+  width: 1440px;
+  height: 44px;
+  top: 2536px;
+  left: 1px;
+  position: absolute;
+  background-color: #222E34;
+  color: #DDDDDD;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 768px) { /* For tablets and mobile phones */
+
+  .container {
+    width: 95%; /* Full width for container */
+    height: auto; /* Let height adjust based on content */
+    top: 0;
+    left: 0px;
+    flex-direction: column; /* Stack content vertically */
+    position: absolute;
+  }
+
+  .websiteFooter {
+    width: 100%; /* Full width footer */
+    height: 40px; /* Slightly smaller height */
+    position: relative; /* Relative position for better stacking */
+    top: 3450px;
+  }
+}
+
+@media (max-width: 480px) { /* For small mobile phones */
+
+  .websiteFooter {
+    font-size: 12px; /* Smaller text size for footer */
+    padding: 5px 0;
+    
+  }
+}

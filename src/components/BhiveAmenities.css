@@ -1,0 +1,107 @@
+.amenities {
+    text-align: center;
+    top:640px;
+    position: absolute;
+}
+h2{
+    margin: 0px;
+}
+
+.advantagesQuestion {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #263238;
+    position: absolute;
+    left: 120px;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px; 
+    top: 64px;
+    position: relative;
+    left: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 80px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.featureName {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #263238;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .amenities {
+        position: absolute;
+        top: 400%;
+    }
+    .feature-item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .amenities {
+        position: absolute;
+        top: 400%;
+    }
+    .feature-item {
+        width: 40%; 
+    }
+
+    .advantagesQuestion {
+        font-size: 1.8rem;
+        left:unset;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        width: 40%; /* Full width for mobile */
+    }
+
+    .features-grid {
+        gap: 15px; /* Reduce spacing for smaller screens */
+    }
+
+    .advantagesQuestion {
+        font-size: 1.5rem; /* Reduce font size for small screens */
+    }
+
+    .image-container img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .featureName {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,147 @@
+.bhiveTitle{
+    width: 806px;
+    height: 254px;
+    top: 108px;
+    left: 120px;
+    font-family: Inter;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.19px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: absolute; 
+    margin: 0px; 
+}
+
+
+
+.bhiveTitle span{
+    font-family: Inter;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.19px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#F2B304;
+}
+
+.bhiveTitleContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    width: 823px;
+    height: 500px;
+    top: 98px;
+    gap: 0px;
+    position: absolute;
+    left: 0px;
+  }
+
+.bhiveTitleContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/images/titleBG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+}
+
+.co-working{
+    position: absolute;
+    left: 932px;
+}
+
+.co-working img{
+    width: 388px;
+    height: 388px;
+    top: 132px;
+    position: absolute;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+    .bhiveTitleContainer {
+        top: 171%; /* Remove top from desktop */
+        left: unset; /* Remove left from desktop */
+        width: 95%; /* Full width for smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+        margin-top: 10px; /* Space below the image */
+        height:15%;
+    }
+
+    .bhiveTitleContainer::before {
+        display: none; /* Remove the background image */
+    }
+
+    .bhiveTitle {
+        width: 95%; 
+        height: 15%;
+        position: relative;
+        margin: 0 auto;
+        left: unset;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.2px;
+        letter-spacing: -1px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+
+    .bhiveTitle span {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.2px;
+        letter-spacing: -1px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .co-working {
+        top: 48%; /* Remove top from desktop */
+        left: unset; /* Remove left from desktop */
+        width: 100%; /* Full width for smaller screens */
+        display: flex; /* Center the image */
+        justify-content: center;
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .co-working img {
+        width: 300px; /* Reduce image size */
+        height: 300px;
+        position: static; /* Let the image flow naturally */
+    }
+}
+
+@media (max-width: 480px) { /* For small mobile phones */
+    .bhiveTitle {
+        font-size: 24px; /* Further reduce font size */
+        line-height: 30px;
+        padding: 0 10px;
+        left: unset;
+    }
+
+    .bhiveTitle span {
+        font-size: 24px;
+    }
+
+    .co-working img {
+        width: 250px; /* Smaller image size for small phones */
+        height: 250px;
+    }
+}

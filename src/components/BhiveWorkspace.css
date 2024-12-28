@@ -1,0 +1,230 @@
+
+.workspace{
+    position: absolute;
+    top: 950px;
+    left: 120px;
+}
+p{
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.workspaceHeader{
+    width: 366px;
+    height: 45px;
+    margin-bottom: 2rem;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#263238;
+
+}
+.workspaceCardsContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 370px));
+    gap: 45px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.workspaceCard {
+    width: 370px;
+    height: 384px;
+    border-radius: 8px;
+    border: 1.08px solid #EEE7E7CC;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.workspaceCardHeader {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.workspaceName {
+    flex-grow: 1; 
+    text-align: left;
+    width: 238px;
+    height: 48px;
+    margin: 0px;
+}
+
+.direction {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 52px;
+    height: 52px;
+    border: 0.47px solid #EEE7E7;
+    background-color: #F9F9F9;
+    border-radius: 10%; 
+    margin: 0px;
+}
+.workspaceImage{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.workspaceImage img{
+    width: 370px;
+    height: 202px;
+    border-radius: 6px ;
+}
+
+.workspaceFooter {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.dailyPass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #EEE7E7;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    font-size: 1.1rem;
+    width: 167px;
+    height: 66px;
+    border-radius: 6px;
+
+}
+.bulkPass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 167px;
+    height: 66px;
+    border-radius: 6px;
+    border: 1px solid #FFC422;
+    background-color: #FFCF4B;
+
+}
+
+.dailyPass p, .bulkPass p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#65624C;
+}
+
+.discountBadge {
+    position: absolute;
+    top: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #263238;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.price{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Responsive styles for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .workspace{
+        top: 982%;
+        left: 20px;
+        width: 95%;
+
+    }
+    .workspaceCardsContainer {
+        width: 98%;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 35px; /* Reduce gap further */
+        margin-top: 15px;
+    }
+
+    .workspaceCard {
+        width: 95%; /* Full width for mobile */
+        height: 100%;
+        padding: 10px;
+    }
+    .workspaceName{
+        width: 90%;
+        height: auto;
+    }
+
+    .workspaceImage img {
+        height: 95%; 
+        width:90%;
+    }
+
+    .workspaceHeader {
+        font-size: 1.5rem; 
+        
+    }
+
+    .workspaceFooter{
+        gap:15px;
+    }
+
+    .dailyPass,
+    .bulkPass {
+        font-size: 1rem; /* Smaller font for passes */
+        width: 100%; /* Make passes span the width of the card */
+        height: 55%;
+        padding: 10px; /* Adjust padding for better readability */
+    }
+
+    .discountBadge {
+        font-size: 10px; /* Smaller badge font */
+        top: -14px; /* Adjust positioning for smaller cards */
+        padding: 3px;
+    }
+}
+
+/* Additional tweaks for very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .workspaceHeader {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    .workspaceImage img {
+        height: 95%; /* Even smaller images */
+    }
+
+    .workspaceCardsContainer {
+        gap: 35px; /* Reduce gap for very small screens */
+    }
+
+    .dailyPass,
+    .bulkPass {
+        font-size: 0.9rem; /* Smaller font for very small devices */
+    }
+}
+

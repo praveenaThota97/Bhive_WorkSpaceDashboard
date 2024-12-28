@@ -1,0 +1,71 @@
+.bhiveHeader {
+    width: 1440px;
+    height: 90px;
+    position: relative; 
+}
+
+.bhiveLogo {
+    width: 125px;
+    height: 40px;
+    top: 25px;
+    left: 120px;
+    opacity: 1; 
+    position: absolute; 
+}
+
+.callLogo{
+    width: 24px;
+    height: 24px;
+    top: 33px;
+    left: 1287px;
+    position: absolute;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #F2B304;
+}
+
+/* Responsive styles for tablets and mobile devices */
+@media (max-width: 768px) { /* For tablets and mobile phones */
+    .bhiveHeader {
+      width: 100%; 
+      height: 60px; /* Reduce height for smaller screens */
+    }
+  
+    .bhiveLogo {
+      width: 100px; /* Adjust logo size */
+      height: 30px;
+      top: 15px;
+      left: 20px; /* Move closer to the edge */
+    }
+  
+    .callLogo {
+      width: 20px; /* Adjust call logo size */
+      height: 20px;
+      top: 10px;
+      left: auto;
+      right: 20px; /* Align to the right edge */
+    }
+  
+  }
+  
+  @media (max-width: 480px) { /* For small mobile phones */
+    .bhiveHeader {
+      height: 50px; /* Further reduce header height */
+    }
+  
+    .bhiveLogo {
+      width: 90px; /* Smaller logo size */
+      height: 27px;
+      top: 12px;
+      left: 15px;
+    }
+  
+    .callLogo {
+      width: 18px;
+      height: 18px;
+      top: 10px;
+      right: 15px;
+    }
+  
+    
+  }
